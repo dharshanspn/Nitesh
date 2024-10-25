@@ -11,10 +11,11 @@ import multiprocessing
 
 # Account credentials (you can add more accounts here)
 accounts = [
-    {"username": "anwarchegg05@gmail.com", "password": "Author@05", "user_bot_chatID": '1155462778', "account_name": "Anwars", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
-    {"username": "sunitha05chegg@gmail.com", "password": "Chegg@050402", "user_bot_chatID": '1155462778', "account_name": "Sunithas", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
-    {"username": "rahulchegg5@gmail.com", "password": "Author@05", "user_bot_chatID": '1155462778', "account_name": "Rahuls", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
-    {"username": "nirupeshcs@icloud.com", "password": "#Hitlin3945", "user_bot_chatID": '1155462778', "account_name": "Nirupeshs", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
+    {"username": "vinaykundu17@gmail.com", "password": "Vinayk@15", "user_bot_chatID": '5697608903', "account_name": "Vinay", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
+    {"username": "innocentvermagi@gmail.com", "password": "Chegg@123", "user_bot_chatID": '5697608903', "account_name": "Deepak", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
+    {"username": "shabagrohiya@gmail.com", "password": "Chegg@123", "user_bot_chatID": '5697608903', "account_name": "Nitesh", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
+    {"username": "cheggexpert271@gmail.com", "password": "Chegg@123", "user_bot_chatID": '5697608903', "account_name": "Shekar", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
+    {"username": "devilagrohiya@gmail.com", "password": "Nitesh@123", "user_bot_chatID": '5697608903', "account_name": "Ajay", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
     # Add more accounts if necessary
 ]
 
@@ -43,15 +44,11 @@ def refresh_account(account):
     flag_login = True
     while flag_login:
         flag_login = login_to_chegg(username, password, driver,account_name)
-    login_texts = f"Login on {account_name}"
-    telegram_bot_sendtext(login_texts,user_bot_token,user_bot_chatID)    
 
 
     # Start refreshing for the account
     refresh_chegg(driver, accept_option, start_time, end_time, user_bot_token, user_bot_chatID, account_name)
-    exit_texts = f"Loop exit on {account_name}"
-    telegram_bot_sendtext(exit_texts,user_bot_token,user_bot_chatID)  
-    
+   
 
 
 if __name__ == "__main__":
