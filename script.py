@@ -15,7 +15,7 @@ accounts = [
     {"username": "innocentvermagi@gmail.com", "password": "Chegg@123", "user_bot_chatID": '5697608903', "account_name": "Deepak", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
     {"username": "shabagrohiya@gmail.com", "password": "Chegg@123", "user_bot_chatID": '5697608903', "account_name": "Nitesh", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
     {"username": "cheggexpert271@gmail.com", "password": "Chegg@123", "user_bot_chatID": '5697608903', "account_name": "Shekar", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
-    {"username": "devilagrohiya@gmail.com", "password": "Nitesh@123", "user_bot_chatID": '5697608903', "account_name": "Ajay", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
+    {"username": "devilagrohiya@gmail.com", "password": "Chegg@123", "user_bot_chatID": '5697608903', "account_name": "Ajay", "user_bot_token" : "8131045025:AAE9_BMb5i2pk479mubtilbSIUilPA25jWM"},
     # Add more accounts if necessary
 ]
 
